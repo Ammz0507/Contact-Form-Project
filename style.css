@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    color: #999;
+    font-size: 13px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    background: #fff;
+    padding: 0 5px;
+}
+
+.input-group textarea {
+    height: 90px;
+    resize: none;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label,
+.input-group select:focus + label,
+.input-group select:valid + label {
+    top: -7px;
+    font-size: 11px;
+    color: #764ba2;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #764ba2;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a3a8a;
+}
+
+.success {
+    display: none;
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+    font-size: 14px;
+}

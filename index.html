@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>📩 Contact Us</h2>
+    <p>We’d love to hear from you</p>
+
+    <form id="contactForm">
+        
+        <div class="input-group">
+            <input type="text" name="name" required minlength="3" maxlength="30">
+            <label>Full Name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="email" name="email" required>
+            <label>Email Address</label>
+        </div>
+
+        <div class="input-group">
+            <input type="tel" name="mobile" 
+                   pattern="[0-9]{10}" 
+                   required>
+            <label>Mobile Number</label>
+        </div>
+
+        <div class="input-group">
+            <select required>
+                <option value="" disabled selected></option>
+                <option>General Inquiry</option>
+                <option>Support</option>
+                <option>Feedback</option>
+            </select>
+            <label>Subject</label>
+        </div>
+
+        <div class="input-group">
+            <textarea required minlength="10"></textarea>
+            <label>Your Message</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p class="success" id="successMsg">Message sent successfully ✅</p>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
